@@ -1,0 +1,284 @@
+/*
+Google Fonts
+
+font-family: 'Karla', sans-serif;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Lovers Quarrel', cursive;
+font-family: 'Josefin Slab', serif;
+
+ */
+
+/* ANIMATIONS================================= */
+
+@keyframes rotateFall {
+    0%      { transform: rotateZ(0deg); }
+    20%     { transform: rotateZ(10deg); animation-timing-function: ease-out; }
+    40%     { transform: rotateZ(17deg); }
+    60%     { transform: rotateZ(16deg); }
+    100%    { transform: translateY(100%) rotateZ(17deg); }
+}
+
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+    to      { transform: translateX(-100%); }
+}
+
+@keyframes rotateOutNewspaper {
+    to      { transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
+}
+
+@keyframes scaleUp {
+    from    { opacity: 0.5; -webkit-transform: scale(0.5); }
+}
+
+@keyframes slideInRight {
+    from    { transform:translateX(100%); }
+    to      { transform: translateX(0); }
+}
+
+@keyframes slideOutUp {
+    from    { transform:translateY(0); }
+    to      { transform: translateY(100%); }
+}
+
+/* =========================================== */
+
+/* RESET */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+    margin:0;
+    padding:0;
+}
+
+html,body {
+    margin:0;
+    padding:0;
+    min-height: 100% !important;
+	height: 100%;
+}
+
+/*------*/
+
+ol {
+	list-style-position: inside;
+}
+
+#wrapper {
+	background: url("img/background_wedding.png") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 100vh;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.header {
+	margin: 0;
+	padding: 0;
+}
+
+#header {
+	width: 100%;
+	height: calc(100% - 2em);
+	height: -moz-calc(100% - 2em);
+	height: -webkit-calc(100% - 2em);
+	height: -o-calc(100% - 2em);
+	background-color: rgba(0,0,0,0.5);
+}
+
+#header-content {
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+#header-text {
+	display: inline-block;
+	position: relative;
+	height: auto;
+	width: 650px;
+	margin: 15% 1%;
+	padding: 0;
+	text-align: center;
+	line-height: 2.25em;
+}
+
+#header-text h1 {
+	display: inline;
+	font-family: 'Lovers Quarrel', cursive;
+	font-weight: 400;
+	font-size: 4em;
+	color: #E6E8FA;
+}
+
+#header-text h2 {
+	display: inline;
+	font-family: 'Fredericka the Great', cursive;
+	font-weight: 400;
+	font-size: 3em;
+	color: #CFB53B;
+}
+
+#header-text h3 {
+	display: inline;
+	font-family: 'Fredericka the Great', cursive;
+	font-weight: 400;
+	font-size: 2.65em;
+	color: #CFB53B;
+}
+
+#nav {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	min-height: 2em;
+	height: 2em;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(0,0,0,0.9);
+	overflow: hidden;
+}
+
+#nav li a {
+	text-decoration: none;
+	font-family: 'Fredericka the Great', cursive;
+	font-weight: 400;
+	font-size: 1.5em;
+	color: #CFB53B;
+	text-align: center;
+}
+
+#nav ul {
+	list-style: none;
+	font-family: 'Fredericka the Great', cursive;
+	font-weight: 400;
+	font-size: 1em;
+	color: #CFB53B;
+	text-align: center;
+}
+
+#nav ul li {
+	display: inline;
+	padding: 0 8%;
+}
+
+#view-wrap {
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.view {
+	padding: 5px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.infoDiv {
+	padding: 10% 0 0 0;
+}
+
+.infoDiv p, .infoDiv li {
+	font-family: 'Josefin Slab', serif;
+	font-weight: 400;
+	font-size: 1.3em;
+	color: #E6E8FA;
+}
+
+.infoDiv a {
+	text-decoration: none;
+	color: #CFB53B;
+	font-weight: 600;
+}
+
+#ngview {
+	height: 100%;
+	margin: 0;
+}
+
+#location {
+	width: 40%;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	margin: 0 30% 0 30%;
+}
+
+#lodging {
+	width: 40%;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	margin: 0 30% 0 30%;
+}
+
+#registry {
+	width: 40%;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	margin: 0 30% 0 30%;
+	text-align: center;
+}
+
+.directions {
+	position: relative;
+	width: 50%;
+	height: auto;
+	padding: 0;
+	margin: 0 25% 0 25%;
+	text-align: center;
+}
+
+.directions a {
+	text-decoration: none;
+	color: #CFB53B;
+	font-weight: 600;
+}
+
+.centered {
+	text-align: center;
+}
+
+.vertical-text {
+	margin: 2% 0 0 0;
+	display: block;
+	float: left;
+	width: auto;	
+	transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	-webkit-transform-origin: 100% 100%;
+	-o-transform-origin: 100% 100%;
+	font-family: 'Fredericka the Great', cursive;
+	font-weight: 400;
+	font-size: 4.5em;
+	color: #CFB53B;
+}
+
+#blink {
+	display: none;
+}
+
+.ng-enter {
+    animation: slideInRight 0.5s both ease-in;
+    z-index: 5555;
+}
+.ng-leave {
+    animation: slideOutUp 0.3s both ease-in;
+    z-index: 6666;
+}
+
+

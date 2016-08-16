@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+  <head>
+    <meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Grote-Schroeter Wedding</title>
+  <link rel="stylesheet" href="custom.css" type="text/css">
+  <link rel="stylesheet" href="responsive.css" type="text/css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab|Karla|Lovers+Quarrel" rel="stylesheet">
+  <!-- Load AngularJS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js" type="text/javascript"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js" type="text/javascript"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js" type="text/javascript"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-touch.min.js" type="text/javascript"></script>
+  <script src="script.js" type="text/javascript"></script>
+  </head>
+  <body ng-app="weddingInfo" ng-animate-children="!exp">
+  	<div id="wrapper">
+  		<div id="header" class="header">
+	  			<md-content md-scroll-y>
+		  			<div id="view-wrap" class="view-wrap" ng-controller="viewController">
+		  				<div id="ngview" ng-view>
+
+		  				</div>
+		  			</div>
+	  			</md-content>
+  			<div id="nav" class="nav">
+				<ul>
+					<li><a href="#location">Location</a></li>
+					<li><a href="#lodging">Lodging</a></li>
+					<li><a href="#registry">Registry</a></li>
+				</ul>
+			</div>
+  		</div>
+  	</div>
+  </body>
+</html>
