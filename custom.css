@@ -210,7 +210,11 @@ ol {
 	height: 100%;
 	overflow-y: auto;
 	overflow-x: hidden;
-	margin: 0 30% 0 30%;
+	margin: -4% 30% 0 30%;
+}
+
+#location a {
+	line-height: 2;
 }
 
 #lodging {
@@ -218,7 +222,7 @@ ol {
 	height: 100%;
 	overflow-y: auto;
 	overflow-x: hidden;
-	margin: 0 30% 0 30%;
+	margin: -4% 30% 0 30%;
 }
 
 #registry {
@@ -226,7 +230,7 @@ ol {
 	height: 100%;
 	overflow-y: auto;
 	overflow-x: hidden;
-	margin: 0 30% 0 30%;
+	margin: -4% 30% 0 30%;
 	text-align: center;
 }
 
@@ -235,7 +239,7 @@ ol {
 	width: 50%;
 	height: auto;
 	padding: 0;
-	margin: 0 25% 0 25%;
+	margin: -5% 25% 0 25%;
 	text-align: center;
 }
 
@@ -266,6 +270,7 @@ ol {
 	font-weight: 400;
 	font-size: 4.5em;
 	color: #CFB53B;
+	height: 25%;
 }
 
 #blink {
